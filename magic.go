@@ -14,11 +14,11 @@ func NewMagic(h *Human) *Magic {
 	}
 }
 
-func (m Magic) GenerateDress() Costume {
+func (m *Magic) GenerateDress() Costume {
 	fmt.Printf("%v は魔法でドレスを作ってもらった！\n", m.Target.Name)
 	return NewDress(m.Target)
 }
-func (m Magic) GenerateGlassShoes() *Shoes {
+func (m *Magic) GenerateGlassShoes() *Shoes {
 	fmt.Printf("%v は魔法でガラスの靴を作ってもらった！\n", m.Target.Name)
 	return NewShoes(m.Target)
 }
