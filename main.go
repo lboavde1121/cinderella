@@ -65,7 +65,7 @@ func main() {
 			<-time.After(1 * time.Second)
 			ball.Dancing()
 
-			if ball.Clock == 23 {
+			if ball.Clock == 24 {
 				limit <- 1
 			}
 		}

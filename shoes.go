@@ -12,6 +12,6 @@ func NewShoes(h *Human) *Shoes {
 }
 
 // 所有者のみ履くことができる
-func (s *Shoes) Wear(h *Human) bool {
+func (s Shoes) Wear(h *Human) bool {
 	return h == s.Owner
 }

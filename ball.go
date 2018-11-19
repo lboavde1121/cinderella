@@ -18,7 +18,7 @@ func NewBall(startedAt, finishedAt int) *Ball {
 	}
 }
 
-func (b *Ball) Start() {
+func (b Ball) Start() {
 	fmt.Println("舞踏会開始")
 }
 
@@ -30,11 +30,11 @@ func (b *Ball) Dancing() {
 	b.Clock++
 }
 
-func (b *Ball) Finish() {
+func (b Ball) Finish() {
 	fmt.Println("舞踏会は終了")
 }
 
-func (b *Ball) IsFinished() bool {
+func (b Ball) IsFinished() bool {
 	return b.Clock >= b.FinishedAt
 }
 

@@ -17,7 +17,7 @@ func NewDress(h *Human) Costume {
 }
 
 // 所有者のみ着ることができる
-func (d *Dress) Wear(h *Human) bool {
+func (d Dress) Wear(h *Human) bool {
 	return h == d.Owner && h.Gender == Woman
 }
 
@@ -32,7 +32,7 @@ func NewTailcoat(h *Human) Costume {
 	}
 }
 
-func (t *Tailcoat) Wear(h *Human) bool {
+func (t Tailcoat) Wear(h *Human) bool {
 	return h == t.Owner && h.Gender == Man
 }
 
@@ -55,7 +55,7 @@ func (d *DressRoom) Store(humans ...*Human) {
 	}
 }
 
-func (dr *DressRoom) GetDress(h *Human) {
+func (dr DressRoom) GetDress(h *Human) {
 	for _, dress := range dr.Dresses {
 		if dress.Wear(h) {
 			h.SetCostume(dress)
