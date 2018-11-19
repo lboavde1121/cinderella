@@ -11,7 +11,7 @@ From Wikipedia
 
 The operation is unconfirmed except the above environment.
 
-# Useage
+# Usage
 
 ## Clone
 ```
