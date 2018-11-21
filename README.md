@@ -6,7 +6,7 @@ From Wikipedia
 
 
 # Dependency
-- MacOSX Mojave 10.14.1
+- macOS Mojave 10.14.1
 - Golang 1.11.1
 
 The operation is unconfirmed except the above environment.
