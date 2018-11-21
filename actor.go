@@ -10,7 +10,7 @@ const (
 	Man
 )
 
-// 投稿人物用
+// 登場人物用
 type Human struct {
 	Name   string
 	Age    int
